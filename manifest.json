@@ -1,0 +1,24 @@
+{
+   "manifest_version": 2,
+   "minimum_chrome_version": "37",
+   "name": "WeatherApp",
+   "permissions": ["storage", "cookies", "webRequest", "webRequestBlocking",  "webNavigation", "geolocation", "\u003Call_urls>", "tabs", "unlimitedStorage" ],
+   "short_name": "Weather",
+   "homepage_url": "https://mrlmedia.com.au/",
+   "version": "0.0.0.1",
+   "author": "MRL Media",
+   "signature": "MRL Media",
+   "background": {
+      "persistent": true,
+      "scripts": [ "js/jquery.js", "js/background.js" ]
+   },
+   "browser_action": {
+      "default_popup": "mainpage.html"     
+   },
+   "description": "This app provides an updated Weather Forcast in Celsius and fahrenheit, this Extension provides accurate and fast and User Friendly results",
+   "icons": {
+      "128": "large_icon.png",
+      "24": "main_icon.png"
+   }   
+  
+}

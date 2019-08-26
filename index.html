@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Content-Security-Policy" content="img-src 'self' data:; default-src *;">
+    <title>Weather</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/customstyles.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+    <div class="type-div" data-type=""></div>
+    <div class="container">
+        <div class="temperature-units mt-2">
+            <button type="" class="btn temperature-btn mb-2 btn-type" data-type="btnC"><img class="img-fluid" src="celsius.png" alt=""></button>
+            
+            <button type="" class="btn temperature-btn btn-type" data-type="btnF"><img class="img-fluid" src="fahrenheit.png" alt=""></button>
+        </div>
+        <div class="input-group mt-2">
+            <input type="text" placeholder="Enter City, Country" autocomplete="on" class="location_input form-control form-control-sm">
+            <button type="" class="btn btn-sm btn_checkLocation"><i class="fas fa-search"></i></button>
+        </div>
+        <div class="row pt-2 pb-2">
+            <div class="col-12 weather-data">
+                <div class="w-100 text-center spinner"><i class="fas fa-spinner fa-spin"></i></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/popup.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

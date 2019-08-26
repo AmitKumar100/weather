@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+body, html {
+    font-family: 'Open Sans', sans-serif;
+    width: 400px;
+    height: auto;
+    background-image: url('../atmosphere.jpg');
+    background-position: bottom;
+    background-size: cover;
+    /* border-radius: 10px; */
+}
+.weather-data {
+}
+.header-title {
+    font-size: 1.2em;
+}
+.header-title span {
+    font-size: .6em;
+    color: #6a6c6f;
+}
+.location-details {
+    font-size: 20px;
+    text-align: right;
+    font-weight: 600;
+    text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.5);
+}
+.weather-details {
+    font-size: .8em;
+}
+.details {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+.details span {
+    font-size: 14px;
+    color: #646464;
+    font-weight: normal;
+    text-shadow: none;
+}
+.weather-details-item {
+    font-size: 1em;
+    color: #ffffff;
+    text-align: center;
+}
+.temperature-units {
+    position: absolute;
+    top: 40px;
+    left: 15px;
+    z-index: 9;
+}
+.temperature-units .temperature-btn {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+input.location_input {
+    background: rgba(0, 106, 247, 0.5);
+    border: none;
+    border-radius: 100px !important;
+    padding-right: 40px;
+    padding-left:15px; 
+    color: #fff;
+}
+input.location_input:focus {
+    color: #fff;
+    background-color: rgba(0, 106, 247, 0.5);
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.25);
+}
+input.location_input::placeholder {
+    color: #fff;
+}
+.btn_checkLocation {
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    background: rgb(45, 103, 210);
+    color: white;
+    z-index: 9;
+}
+.current-temp {
+    font-size: 48px;
+    text-align: center;
+    text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.5);
+}
+.weather-details .card {
+    background: rgba(0, 0, 0, 0.3);
+}
+.weather-details .card .card-header {
+    font-weight: 600;
+}
+.weather-details .card .card-body {
+    padding: 15px;
+}
+.weather-details .card .card-header {
+    padding: 10px 15px;
+    color: white;
+    background: rgba(0, 0, 0, 0.15);
+}
+.min-max-temp, .final-date {
+    font-size: 14px;
+}
